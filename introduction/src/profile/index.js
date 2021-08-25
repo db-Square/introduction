@@ -91,6 +91,28 @@ const transactions = [
     datetime: "2020-07-11",
   },
 ];
+const skills = [
+  {
+    id: 1,
+    name: "React",
+    experties: "8 out of 10",
+  },
+  {
+    id: 2,
+    name: "Node.Js",
+    experties: "8 out of 10",
+  },
+  {
+    id: 3,
+    name: "Tailwind CSS",
+    experties: "8 out of 10",
+  },
+  {
+    id: 4,
+    name: "WPF",
+    experties: "9 out of 10",
+  },
+];
 const statusStyles = {
   success: "bg-green-100 text-green-800",
   processing: "bg-yellow-100 text-yellow-800",
@@ -425,36 +447,59 @@ export class Profile extends Component {
                 Project
               </h2>
 
-              {/* Activity table (small breakpoint and up) */}
-              <div className="hidden sm:block">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                  <div className="flex flex-col mt-2">
-                    <div className="align-middle min-w-full overflow-x-auto shadow overflow-hidden sm:rounded-lg">
-                      <ul
-                        role="list"
-                        class="py-4 space-y-2 sm:px-6 sm:space-y-4 lg:px-8"
-                      >
-                        {transactions.map((transaction) => (
-                          <li class="bg-white px-4 py-6 shadow sm:rounded-lg sm:px-6">
-                            <div class="sm:flex sm:justify-between sm:items-baseline">
-                              <h3 class="text-base font-medium">
-                                <span class="text-gray-900">
-                                  {transaction.name}
-                                </span>
-                              </h3>
-                              <p class="mt-1 text-sm text-gray-600 whitespace-nowrap sm:mt-0 sm:ml-3">
-                                <time datetime="2021-01-28T19:24">
-                                  Yesterday at 7:24am
-                                </time>
-                              </p>
-                            </div>
-                            <div class="mt-4 space-y-6 text-sm text-gray-800">
-                              <p>Thanks so much! Can't wait to try it out.</p>
-                            </div>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+              <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex flex-col mt-2">
+                  <div className="align-middle min-w-full overflow-x-auto shadow overflow-hidden sm:rounded-lg">
+                    <ul
+                      role="list"
+                      class="py-4 space-y-2 sm:px-6 sm:space-y-4 lg:px-8"
+                    >
+                      {transactions.map((transaction) => (
+                        <li class="bg-white px-4 py-6 shadow sm:rounded-lg sm:px-6">
+                          <div class="sm:flex sm:justify-between sm:items-baseline">
+                            <h3 class="text-base font-medium">
+                              <span class="text-gray-900">
+                                {transaction.name}
+                              </span>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-600 whitespace-nowrap sm:mt-0 sm:ml-3">
+                              <time datetime="2021-01-28T19:24">
+                                Yesterday at 7:24am
+                              </time>
+                            </p>
+                          </div>
+                          <div class="mt-4 space-y-6 text-sm text-gray-800">
+                            <p>Thanks so much! Can't wait to try it out.</p>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <h2 className="max-w-6xl text-justify mx-auto mt-8 px-4 text-lg leading-6 font-medium text-gray-900 sm:px-6 lg:px-8">
+                Skils
+              </h2>
+              <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex flex-col mt-2">
+                  <div className="align-middle min-w-full overflow-x-auto shadow overflow-hidden sm:rounded-lg">
+                    <ul
+                      role="list"
+                      class="py-4 space-y-2 sm:px-6 sm:space-y-4 lg:px-8"
+                    >
+                      {skills.map((transaction) => (
+                        <li class="bg-white px-4 py-6 shadow sm:rounded-lg sm:px-6">
+                          <div class="sm:flex sm:justify-between sm:items-baseline">
+                            <h3 class="text-base font-medium">
+                              <span class="text-gray-900">
+                                {transaction.name}
+                              </span>
+                            </h3>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
