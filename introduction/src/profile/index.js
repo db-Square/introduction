@@ -14,11 +14,6 @@ import {
 
 const navigation = [
   { name: "Profile", href: "#", icon: HomeIcon, current: true },
-  //   { name: "History", href: "#", icon: ClockIcon, current: false },
-  //   { name: "Balances", href: "#", icon: ScaleIcon, current: false },
-  //   { name: "Cards", href: "#", icon: CreditCardIcon, current: false },
-  //   { name: "Recipients", href: "#", icon: UserGroupIcon, current: false },
-  //   { name: "Reports", href: "#", icon: DocumentReportIcon, current: false },
 ];
 
 const cards = [
@@ -73,44 +68,54 @@ const transactions = [
   {
     id: 1,
     name: "ANZ",
-    href: "#",
-    amount: "$20,000",
-    currency: "USD",
-    status: "success",
-    date: "July 11, 2020",
-    datetime: "2020-07-11",
+    durations: "December 2020 - Present",
+    desc: "Working as Full Stack Web Developer(MERN Stack), I worked on multiple domain like Risk Technology, Institutional banking as a Senior developer",
   },
   {
     id: 2,
+    name: "RazorRisk",
+    durations: "March 2020 - December 2020",
+    desc: "Razor, I have done Counterparty Credit Risk transformation programme at a leading German bank for replacing a number of legacy risk solutions with Razor Risk’s Platform ",
+  },
+  {
+    id: 3,
     name: "PwC",
-    href: "#",
-    amount: "$20,000",
-    currency: "USD",
-    status: "success",
-    date: "July 11, 2020",
-    datetime: "2020-07-11",
+    durations: "September 2016 - March 2020",
+    desc: "As part of my role, I have mainly worked for ANZ Bank on developing solutions for Counterparty Credit Risk, Pre Deal Check and Risk Grading tools, High Risk Customer Management and other counterparty risk assessment tools",
+  },
+  {
+    id: 4,
+    name: "Q3 Technoogies",
+    durations: "October 2012 - September 2016",
+    desc: "Software Development in WPF, Silverlight Technology. Here I worked on creating solution for UK Jewelery TV program scheduler,Auction Management systems, Aerospace organization Inventory managemnts",
+  },
+  {
+    id: 5,
+    name: "Santech Solution, Inc.",
+    durations: "September 2011 - October 2012",
+    desc: "The company provides healthcare IT products and services and was started by healthcare professionals bringing significant experience to our solutions for healthcare organizations such as provider organizations, payors, brokers, intermediaries and healthcare association membership trusts.",
   },
 ];
 const skills = [
   {
     id: 1,
-    name: "React",
+    name: "React , Node.Js, Express, Tailwind CSS ",
     experties: "8 out of 10",
   },
   {
     id: 2,
-    name: "Node.Js",
+    name: "C#, WPF, Silverlight, MVC, MVVM, .NetCore",
     experties: "8 out of 10",
   },
   {
     id: 3,
-    name: "Tailwind CSS",
+    name: "Ruby, Kotlin frameworks",
     experties: "8 out of 10",
   },
   {
     id: 4,
-    name: "WPF",
-    experties: "9 out of 10",
+    name: "SQL, MongoDB, Postgresql",
+    experties: "8 out of 10",
   },
 ];
 const statusStyles = {
@@ -463,13 +468,11 @@ export class Profile extends Component {
                               </span>
                             </h3>
                             <p class="mt-1 text-sm text-gray-600 whitespace-nowrap sm:mt-0 sm:ml-3">
-                              <time datetime="2021-01-28T19:24">
-                                Yesterday at 7:24am
-                              </time>
+                              {transaction.durations}
                             </p>
                           </div>
-                          <div class="mt-4 space-y-6 text-sm text-gray-800">
-                            <p>Thanks so much! Can't wait to try it out.</p>
+                          <div class="mt-4 text-justify space-y-6 text-sm text-gray-800">
+                            <p>{transaction.desc}</p>
                           </div>
                         </li>
                       ))}
@@ -479,7 +482,7 @@ export class Profile extends Component {
               </div>
 
               <h2 className="max-w-6xl text-justify mx-auto mt-8 px-4 text-lg leading-6 font-medium text-gray-900 sm:px-6 lg:px-8">
-                Skils
+                Primary Skils
               </h2>
               <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col mt-2">
