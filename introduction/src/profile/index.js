@@ -134,7 +134,7 @@ export class Profile extends Component {
     this.state = {
       sidebarOpen: false,
       profileImage:
-        "https://media-exp1.licdn.com/dms/image/C5603AQEqCwkDcEaegA/profile-displayphoto-shrink_400_400/0/1626068491688?e=1635379200&v=beta&t=cXFMAHS5crxpxsgJFZkTFMjaqvW0Ate9P1_OnPNZbjc",
+        "https://media-exp1.licdn.com/dms/image/C5603AQEqCwkDcEaegA/profile-displayphoto-shrink_400_400/0/1626068491688?e=1642032000&v=beta&t=mgL4pwk9cAPwDrYgXmDymZWOIRW20veoUaxfIW97b3g",
     };
   }
 
