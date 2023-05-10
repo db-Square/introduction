@@ -24,7 +24,7 @@ const navigation = [
 
 const cards = [
   {
-    name: "ANZ",
+    name: "ANZ (On Role Parsimony)",
     title: "Senior Engineer",
     href: "#",
     companyImage: anz,
@@ -32,7 +32,7 @@ const cards = [
     durations: "December 2020 - Present",
   },
   {
-    name: "Razor Risk",
+    name: "Razor Risk (On Role Parsimony)",
     title: "Senior Software Engineer",
     href: "#",
     companyImage: razor,
