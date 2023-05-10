@@ -25,7 +25,7 @@ const navigation = [
 const cards = [
   {
     name: "ANZ",
-    title: "Senior Engineer - Grade (4.1)",
+    title: "Senior Engineer",
     href: "#",
     companyImage: anz,
     desc: "",
