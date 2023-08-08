@@ -24,15 +24,15 @@ const navigation = [
 
 const cards = [
   {
-    name: "ANZ (On Role Parsimony)",
-    title: "Senior Engineer",
+    name: "ANZ Bank",
+    title: "Engineering Chapter Lead",
     href: "#",
     companyImage: anz,
     desc: "",
     durations: "December 2020 - Present",
   },
   {
-    name: "Razor Risk (On Role Parsimony)",
+    name: "Razor Risk",
     title: "Senior Software Engineer",
     href: "#",
     companyImage: razor,
@@ -382,7 +382,7 @@ export class Profile extends Component {
                           <dl className="mt-6 flex flex-col sm:ml-3 sm:mt-1 sm:flex-row sm:flex-wrap">
                             <dt className="sr-only">Company</dt>
                             <dd className="flex items-center text-sm text-gray-500 font-medium capitalize sm:mr-6">
-                              Full Stack Engineer at ANZ | Ex- PwC India
+                              Engineering Chapter Lead at ANZ | Ex- PwC India
                             </dd>
                           </dl>
                           <dl className="mt-6 flex flex-col sm:ml-3 sm:mt-1 sm:flex-row sm:flex-wrap">
